@@ -17,22 +17,24 @@ public class SimpleGUI extends JFrame {
     
     private static final long serialVersionUID = 1L;
     
-    
 
     public  SimpleGUI() {
     	
 
         super("Калькулятор ремонта. Отделочные работы.");
-        
+        this.setBounds(300, 100, 900, 600);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         
         Container container = this.getContentPane();
-        container.setLayout(new GridLayout(10, 1, 10, 10));
- 
-     
-       
-
+      
+    
         
+        ButtonGroup group = new ButtonGroup();
+        
+
+        button.addActionListener(new ButtonEventListener());
+
     }
     
     class ButtonEventListener implements ActionListener {

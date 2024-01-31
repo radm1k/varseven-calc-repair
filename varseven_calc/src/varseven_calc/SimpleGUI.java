@@ -23,22 +23,13 @@ public class SimpleGUI extends JFrame {
     	
 
         super("Калькулятор ремонта. Отделочные работы.");
-        this.setBounds(300, 100, 900, 600);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
 
         
         Container container = this.getContentPane();
         container.setLayout(new GridLayout(10, 1, 10, 10));
  
-     // Получаем текущий шрифт JLabel
-        Font currentFont = Title.getFont();
-
-        // Создаем новый шрифт с большим размером
-        Font newFont = new Font(currentFont.getName(), currentFont.getStyle(), currentFont.getSize() + 5);
-
-        // Устанавливаем новый шрифт в JLabel
-        Title.setFont(newFont);
-        // паддинги для инпутов и тд
+     
        
 
         

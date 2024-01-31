@@ -10,5 +10,4 @@ public abstract class Material {
 	public void setCost(double cost) {
 		this.cost = cost;
 	}
-
 }
